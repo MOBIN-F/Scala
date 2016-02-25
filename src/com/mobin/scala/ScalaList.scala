@@ -24,7 +24,5 @@ object  ScalaList{
     val threeTwoOne = 3 :: 2 :: 1 :: Nil
     println(threeTwoOne)
     //println(threeTwoOne(0))
-    //test
-    //case
   }
 }
