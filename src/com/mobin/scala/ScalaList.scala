@@ -25,5 +25,6 @@ object  ScalaList{
     println(threeTwoOne)
     //println(threeTwoOne(0))
     //test
+    //case
   }
 }
