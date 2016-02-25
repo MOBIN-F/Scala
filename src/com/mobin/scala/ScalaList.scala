@@ -23,6 +23,7 @@ object  ScalaList{
     //Nil方法的使用
     val threeTwoOne = 3 :: 2 :: 1 :: Nil
     println(threeTwoOne)
-    //println(threeTwoOne(0))
+    //println(threeTwoOne(0));
+
   }
 }
