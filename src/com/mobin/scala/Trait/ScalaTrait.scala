@@ -1,11 +1,9 @@
-package com.mobin.scala
+package com.mobin.scala.Trait
 
 /**
  * Created by Mobin on 2015/11/22.
  */
-class ScalaTrait {
 
-}
 
 trait Philosophical {
   def philosophical: Unit = {
