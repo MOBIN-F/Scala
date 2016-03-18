@@ -9,7 +9,7 @@ object ScalaActor1 extends App {
 
   class hiactor extends Actor {
     def act() {
-      while (true) {
+      while (true) {    //TODO 将hwile去掉试试（while影响receive的工作）
         receive {
           case msg: String => println("hello  " + msg) }
       }
