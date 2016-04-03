@@ -17,7 +17,7 @@ object MaxValue extends  App{
          }
 
   /*
-  *  视界
+  *  视界：T <% Ordered[T]指“任何的T都好，只要T能被当作Orderer[T]即可”
    *  def maxListUpBound[T <% Ordered[T]](e : List[T]) =
          e match {
            case List() =>
