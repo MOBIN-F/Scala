@@ -16,6 +16,20 @@ object MaxValue extends  App{
              else maxRest
          }
 
+  /*
+  *  视界
+   *  def maxListUpBound[T <% Ordered[T]](e : List[T]) =
+         e match {
+           case List() =>
+               throw new IllegalArgumentException("empty list!!")
+           case List(x) =>  x    //List(x)表示List只有一个元素
+           case x :: rest =>
+             val  maxRest = maxListUpBound(rest)/*(orderer)*/ //隐式参数可以被省略
+             if(orderer(x) > maxRest) x
+             else maxRest
+         }
+  * */
+
  /* def m[T](e : List[T]) =
      e match{
        case List(x) => println(x)
