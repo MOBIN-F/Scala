@@ -11,7 +11,7 @@ object MaxValue extends  App{
                throw new IllegalArgumentException("empty list!!")
            case List(x) =>  x    //List(x)表示List只有一个元素
            case x :: rest =>
-             val  maxRest = maxListUpBound(rest)(orderer)
+             val  maxRest = maxListUpBound(rest)/*(orderer)*/ //隐式参数可以被省略
              if(orderer(x) > maxRest) x
              else maxRest
          }
