@@ -1,4 +1,4 @@
-package com.mobin.scala.implicitPackage
+package com.mobin.scala.Scalaimplicit
 import java.io.File
 import scala.io.Source
 
@@ -19,7 +19,7 @@ class RichFile1(file :File) {
 
 object  impFun extends  App{
      //引入implicitFunctions包下的所有隐式转换函数
-     import com.mobin.scala.implicitPackage.implicitFunctions.ImplicitFunctions._
+     import com.mobin.scala.Scalaimplicit.implicitFunctions.ImplicitFunctions._
      val file=  new File("E:\\Scala\\Scala\\src\\com\\mobin\\scala\\implicitPackage\\file.log").read
      println(file)
 }

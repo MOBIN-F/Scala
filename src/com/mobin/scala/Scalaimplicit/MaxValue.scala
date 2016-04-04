@@ -1,4 +1,4 @@
-package com.mobin.scala.implicitPackage
+package com.mobin.scala.Scalaimplicit
 
 /**
   * Created by Mobin on 2016/4/3.

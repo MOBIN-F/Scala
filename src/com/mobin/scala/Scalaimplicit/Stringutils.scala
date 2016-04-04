@@ -1,4 +1,4 @@
-package com.mobin.scala.implicitPackage
+package com.mobin.scala.Scalaimplicit
 
 import java.util.RandomAccess
 
@@ -13,8 +13,9 @@ object Stringutils {
 }
 
 object  Main extends  App{
-  import com.mobin.scala.implicitPackage.Stringutils._
+  import com.mobin.scala.Scalaimplicit.Stringutils._
   println("mobin".increment)
+
   //编译器在mobin对象调用increment时发现对象上并没有increment方法，此时编译器就会在作用域范围内
   //通过隐式转换将对象转换成具有这个方法的对象
 }
