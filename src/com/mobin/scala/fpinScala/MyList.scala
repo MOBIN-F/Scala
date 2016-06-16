@@ -1,7 +1,5 @@
 package com.mobin.scala.fpinScala
 
-import com.mobin.scala.A
-
 /**
   * Created by Mobin on 2016/6/13.
   */
@@ -43,6 +41,28 @@ object MyList {
       }
   }
 
+  //删除前n个元素
+  def drop[A](l: List[A], n: Int) : List[A] = {
+        if (n == 0) l
+        else drop(tail(l),n-1)
+  }
+
+
+  //删除列表中前缀全部符合判定的元素
+//  def dropWhile(l: List[String], f: String => Boolean,n: Int) : List[String] = {
+//             l match {
+//               case Cons(x, y) if f(x) => dropWhile(y, f)
+//               case Cons(x, _)=>  dropWhile(l,f)
+//             }
+//  }
+
+
+  def prefix(x: String) : Boolean= {
+    println(x)
+     if(x.startsWith("A")) true
+    else false
+  }
+
 
   def main(args: Array[String]) {
     //有了apply方法就可以使用MyList(1,2,3,4,5)的方式来创建列表
@@ -55,11 +75,15 @@ object MyList {
       case  _ => 101
     }
     println(x)
-    val list = MyList(1,2,3,4,5,6)
+    val list = MyList(1,2,13,4,5,6)
     println("sum:  " + sum(list))
     println("product:   " + product(list))
     println("删除第一个元素： " + tail(list))
-    println(setHeader(7, list))
+    println("替换第一个元素"+setHeader(7, list))
+    println("删除前n个元素"+ drop(list, 3))
+
+    val list1 = MyList("AA","MOBIN","AMOBIN","MOB")
+    println("删除符合判定的元素：" + dropWhile(list1, prefix))
 
   }
 }
