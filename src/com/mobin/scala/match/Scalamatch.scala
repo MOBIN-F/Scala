@@ -1,4 +1,4 @@
-package com.mobin.scala
+package com.mobin.scala.match
 
 /**
  * Created by Mobin on 2015/11/22.
