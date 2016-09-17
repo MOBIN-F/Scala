@@ -2,7 +2,7 @@ package com.mobin.scala.collection.Traversable
 
 /**
   * Created by Mobin on 2016/9/16.
-  * 转置矩阵
+  * 转置矩阵,每行元素长度必须一致
   */
 object Transpose {
 
