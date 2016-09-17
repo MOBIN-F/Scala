@@ -3,6 +3,9 @@ package com.mobin.scala.collection.Traversable
 /**
   * Created by Mobin on 2016/9/17.
   * 折叠元素(fold)
+  * foldRight方法之前是通过递归的方式实现的，现在是通过foldLeft实现的
+  * override def foldRight[B](z: B)(f: (A, B) => B): B =
+  *           reverse.foldLeft(z)((right, left) => op(left, right))
   */
 object Fold {
 
