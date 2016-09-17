@@ -7,7 +7,7 @@ package com.mobin.scala.collection.Traversable
   * 3.flatten函数是对集合元素进行浅平展，不进行深层次的平展
   * 4. flatten还能将元素中为none的值自动移除
   */
-object ScalaFlatten {
+object Flatten {
 
   def main(args: Array[String]) {
     val s = Traversable(Traversable(1,2,3),Traversable(2,3,4),Traversable(5,6,7,8))
