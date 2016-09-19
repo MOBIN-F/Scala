@@ -22,5 +22,11 @@ object Fold {
     val result3 = t.:\ ("z")(_ + _)
     println(result2)
     println(result3)
+
+    //求倒数第二个值
+    def pen[A](t: Traversable[A]): A = t.foldLeft( (t.head, t.tail.head) )((r, c) => (r._2, c))._1
+    println(pen(t))
+
+
   }
 }
