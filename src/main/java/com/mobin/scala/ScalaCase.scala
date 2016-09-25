@@ -7,7 +7,7 @@ class ScalaCase {
 
 }
 
-case class  Book(name : String,author : String){
+case class  Book(var name : String,author : String){
 
 
 }

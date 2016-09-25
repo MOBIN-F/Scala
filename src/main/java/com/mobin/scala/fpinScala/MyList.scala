@@ -83,7 +83,7 @@ object MyList {
     println("删除前n个元素"+ drop(list, 3))
 
     val list1 = MyList("AA","MOBIN","AMOBIN","MOB")
-    println("删除符合判定的元素：" + dropWhile(list1, prefix))
+   // println("删除符合判定的元素：" + dropWhile(list1, prefix))
 
   }
 }

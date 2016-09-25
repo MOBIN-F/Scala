@@ -23,6 +23,7 @@ object  Scalamatch extends  App{
     case y : String => println("String")
     case _ => println("unknow type")
 
+
   }
 
   def longestWord(words : Array[String])={
@@ -74,7 +75,7 @@ println("------------------------case子句支持“或”逻辑来避免代码�
       case 1                  => "int 1"
       case _ : Int  | _: Double          => "a munber" + x
       case "one"           => "string one"
-      case _: String       => "other string:" + x
+      case _: String       =>  x
       case unexpected => "unexpect" + x
     }
     println(str)

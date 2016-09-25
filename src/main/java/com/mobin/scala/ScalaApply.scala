@@ -27,16 +27,16 @@ object  Base{
   }
 }
 object ScalaApply extends  App{
-  Base.static//相当于调用了静态方法
+  /*Base.static//相当于调用了静态方法*/
   val a = Base()//类名加()相当于调用了object中的apply方法
   a.test
 
-  val b = new Base
-  println(b())//对象名加()相当于调用了类中的apply方法
+  /*val b = new Base
+  println(b())//对象名加()相当于调用了类中的apply方法*/
 
-  for(i <- 1 to 10){
+  /*for(i <- 1 to 10){
     Base.add
   }
-  println(Base.count)
+  println(Base.count)*/
 }
 

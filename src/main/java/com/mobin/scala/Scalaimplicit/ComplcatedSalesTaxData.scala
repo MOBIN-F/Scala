@@ -30,11 +30,11 @@ object ComplcatedSalesTaxDatamain {
 
   def main(args: Array[String]) {
     import SimpleStateSlaesTax.rate
-
     val amount = 100F
     println(s"Tax on $amount = ${calcTax(amount)}")
 
     println("-------------------------------")
+
     import SimpleStateSlaesTax.rate
     implicit val myStore = ComplcatedSalesTaxData(0.06F, false, 1010)
     val amount1 = 100F

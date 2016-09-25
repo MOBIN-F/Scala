@@ -15,8 +15,8 @@ class ScalaClass {
 //1.主构造器直接跟在类名后面
 //2.主构造器执行的时候，会执行类中的所有语句
 //3.如果参数声明时不带val和var，那么相当于private[this],这样外部的实例不能访问会报错
-class Person(val name : String,val age : Int){
-  println("Person(val,val)")
+class Personss(val name : String,val age : Int){
+ /* println("Person(val,val)")
   var gender : String = _
   var names : String = _
   var ages :Int = _
@@ -33,7 +33,7 @@ object ScalaClass{
    /* val p = new Person
     p.name = "mobin"*/
 
-    val p = new Person("m22obin",20,"pp")
-    println(p.names + ":"+ p.ages + ":" + p.gender)
-  }
+    /*val p = new Person("m22obin",20,"pp")
+    println(p.names + ":"+ p.ages + ":" + p.gender)*/
+  }*/
 }
