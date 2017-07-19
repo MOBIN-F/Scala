@@ -8,8 +8,8 @@ import scala.actors.Actor
   */
 object Average {
 
-  val n = 100
-  val nParts = 2
+  val n = 4
+  val nParts = 1
   val partSize = n / nParts
   var rands = rand(n)
 
@@ -19,14 +19,18 @@ object Average {
     val now = System.nanoTime()
     var total = 0
     var countParts = 0
-    def act: Unit = {
-      total += 1
-      countParts += 1
-      if (countParts < nParts){
-        act
-      }else{
-        println(total / nParts )
-        println("%d millseconds".format((System.nanoTime() - now)))
+    def act {
+      react{
+        case i:Int => {
+          total += i
+          countParts += 1
+          if (countParts < nParts){
+            act
+          }else{
+            println(total  + "  ,  " + nParts )
+            println("%d millseconds".format((System.nanoTime() - now)))
+          }
+        }
       }
     }
   }
