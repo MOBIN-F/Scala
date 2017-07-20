@@ -40,7 +40,7 @@ object Average {
   class SumActor(average: AverageActor) extends Actor{
     def act: Unit ={
       while (true){
-        react{    //使用react更好，因为不需要常驻线程
+        receive{
           case a: Array[Int] => {
             average ! a.sum
           }
